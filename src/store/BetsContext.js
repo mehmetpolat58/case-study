@@ -16,7 +16,10 @@ function BetsProvider({ children }) {
   }, []);
 
   const value = useMemo(
-    () => ({ getBets, bets }),
+    () => ({
+      getBets,
+      bets,
+    }),
     [getBets, bets],
   );
 
