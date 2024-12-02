@@ -4,10 +4,9 @@ import Table from '../components/Table';
 import Basket from '../components/Basket';
 
 function BetsPage() {
-  const { getBets, setBasket } = useContext(BetsContext);
+  const { getBets } = useContext(BetsContext);
   useEffect(() => {
     getBets();
-    return () => setBasket({});
   }, []);
 
   return (
